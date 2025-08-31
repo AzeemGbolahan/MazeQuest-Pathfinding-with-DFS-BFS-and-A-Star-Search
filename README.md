@@ -47,7 +47,7 @@ Project3/
 │   ├── Stack.java # Custom stack
 │   ├── Heap.java # Custom heap
 │   ├── PriorityQueue.java # Custom priority queue
-│   ├── MazeTester.java # Runs maze tests
+│   ├── MazeTester.java # Runs maze tests and visualizations
 │   ├── SearchTests.java # Unit tests for search algorithms
 │   └── HeapTests.java # Unit tests for heap
 ├── extension/                    # Alternative implementation or enhancements
@@ -67,19 +67,12 @@ cd src
 javac *.java
 ```
 
-### Step 2: Run the simulation for DFS, BFS, and A* respectively
+### Step 2: Run the simulation for DFS, BFS, and A* respectively - Remember to parse in the command line arguments!
 
 ```bash
-java MazeDepthFirstSearch 
+java MazeTester <number of rows of the maze> <number of columns for the maze> <density ( how blocked the maze shoudl be in probability (0-1) > [algorithm to be used ( "bfs " for BreadthFirestSearch, "dfs" for DepthFirstSearch, "astar" for AStarSearch ) [display=false (true if you want the display to be shown)] [delay=0(set it to how fast/slow you'd like the display to run)]
 ```
 
-```bash
-java MazeBreadthFirstSearch
-```
-
-```bash
-java MazeAStarSearch
-```
 
 This will open a graphical window displaying the whole maze and the search running in real time.
 
