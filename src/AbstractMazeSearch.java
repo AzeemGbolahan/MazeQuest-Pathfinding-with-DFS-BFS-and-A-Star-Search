@@ -252,4 +252,9 @@ abstract class AbstractMazeSearch {      // Begin abstract base class; concrete 
             getTarget().drawPrevPath(g, scale, Color.BLUE);    // Draw the actual prev path as a blue polyline
         }
     }
+
+    public int getExecutionCost() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getExecutionCost'");
+    }
 }
